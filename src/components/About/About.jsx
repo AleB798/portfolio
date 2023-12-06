@@ -1,0 +1,60 @@
+import React from "react";
+import illustration from '../../assets/illustration-about-me.png';
+import { FaGithub } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaCircleChevronDown } from "react-icons/fa6";
+import '../About/about.scss';
+
+function About() {
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = "https://drive.google.com/file/d/1FdSmI00ilmi6WCRYT4KgTjL7-UwyvqYn/view?usp=sharing";
+    link.download = 'CV_AB_2022.pdf';
+    link.target = '_blank'; // Ouvre le lien dans une nouvelle fenêtre
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
+  const sendEmail = () => {
+    window.location.href = 'mailto:alexbaumann342@email.com'; // Remplacez par votre adresse e-mail
+  }
+
+  const scrollToNext = () => {
+    const nextSection = document.getElementById('home');
+
+    if (nextSection) {
+      const offsetTop = nextSection.offsetTop;
+      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+    }
+  }
+
+  return (
+    <div id="about">
+      <div>
+        <img src={illustration} alt="illustration dev web" onClick={sendEmail} />
+        <div className="about-links">
+          <button onClick={downloadCV} target="_blank">CV</button>
+          <a href="https://github.com/AleB798" target="_blank" rel="noopener noreferrer" className="custom-icons"><FaGithub /></a>
+          <a href="https://github.com/AleB798" target="_blank" rel="noopener noreferrer" className="custom-icons"><FaLinkedin /></a>
+        </div>
+      </div>
+      <div className="about-texts">
+        <h2>Alexandra</h2>
+        <h2> Développeuse web</h2>
+        <h2>front-end & 
+          <span className="job-2"> graphiste</span></h2>
+        <p>
+          Fraichement diplômée en tant que développeuse web et forte d'une 
+          expérience passée de 7 ans en tant que graphiste, 
+          je fusionne des compétences techniques et créatives. 
+        </p>
+      </div>
+      <div className="scroll-down-icon">
+        <FaCircleChevronDown onClick={scrollToNext} />
+      </div>    
+    </div>
+  );
+};
+
+export default About;

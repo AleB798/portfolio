@@ -1,0 +1,68 @@
+@import '../../styles/style.scss';
+
+header {
+  width: 100%;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: $second-color;
+  z-index: 10;
+  margin-bottom: 20px;
+  box-shadow: 0px 11px 24px -11px rgba(0,0,0,0.84);
+  -webkit-box-shadow: 0px 11px 24px -11px rgba(0,0,0,0.84);
+  -moz-box-shadow: 0px 11px 24px -11px rgba(0,0,0,0.84);
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      align-items: center;
+
+      &:hover {
+        transform: rotate(180deg);
+      }
+    }
+  
+    .navbar {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+  
+      a {
+        font-size: 1.5rem;
+        font-weight: 200;
+        letter-spacing: 2px;
+        padding: 0 10px;
+
+        &:hover {
+          color: $light-background-color;
+          border-bottom: solid 4px $light-background-color;
+          font-weight: 500;
+          transition: width 0.3s ease-in-out;
+        }
+      }
+    }
+  }
+
+//adaptation selon écrans
+@media (max-width: $breakpoint-mobile) {
+  header {
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      align-items: center;
+    }
+  
+    .navbar {
+      gap : 8px;
+        a {
+          font-size: 0.65rem;
+          text-transform: uppercase;
+        }
+    }
+  }  
+}
+  

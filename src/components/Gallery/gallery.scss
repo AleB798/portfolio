@@ -1,0 +1,120 @@
+@import '../../styles/style.scss';
+
+.rental-gallery-container {
+
+  width: 100%;
+  padding-top: 120px;
+  padding-bottom: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border-radius: 25px;
+
+  .rental-gallery {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 60px;
+
+    .rental-card {
+      width: 100%;
+      min-width: 500px;
+      height: 340px;
+      position: relative;
+      margin: 0 auto;
+    
+      img {
+        border-radius: 10px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+      }
+    
+      .overlay-card {
+        height: 100%;
+        width: 100%;
+        background: $linear-gradient;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 1;
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: flex-end;
+        // padding: 0 15px;
+        text-align: center;
+    
+        h3 {
+          color: $white;
+          background-color: $light-background-color;
+          padding: 20px;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  // Style de l'overlay
+  .overlay-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+
+      // Style de la fenêtre pop-up
+      .popup {
+        background-color: #fff;
+        padding: 50px;
+        border-radius: 8px;
+        width: 80%;
+        max-height: 80vh; 
+        overflow-y: auto;
+        position: relative;
+
+        h3 {
+          color: $second-color;
+          font-size: 2rem;
+        }
+
+        // Style pour le bouton de fermeture de la pop-up
+        .popup-close {
+          cursor: pointer;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 1.2rem;
+          padding: 5px 10px;
+          color: $white;
+          background-color: $main-color;
+          border: none;
+          border-radius: 10%;
+        }
+      }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .rental-gallery-container {
+    background-color: $white;
+    padding: 0;
+
+    .rental-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(335px, 1fr));
+      grid-gap: 27px;
+
+      .rental-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 335px;
+        height: 255px;      
+      }
+    } 
+  }
+};

@@ -1,0 +1,87 @@
+@import '../../styles/style.scss';
+
+#skills {
+    
+    width: 100%;
+    padding: 120px 0;
+    margin: 0 auto;
+
+    .skills-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 70px;
+
+        .card {
+            width: 30%;
+            background-color: white;
+            padding: 25px 40px;
+            text-align: center;
+            position: relative;
+            border-radius: 15%;
+            
+
+            .custom-icons {
+                font-size : 3em;
+                color: $second-color;
+                padding: 10px;
+            }
+
+            .back-card {
+                text-align: center;
+
+                h3 {
+                    font-size: 2.75rem;
+                    color: $second-color;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                .custom-icons-2 {
+                    display: flex;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    margin-top: 35px;
+                    font-size : 4em;
+                    color: $light-background-color;
+                    padding-top: 10px;
+                    margin-bottom: 30px;;
+                }
+            }
+
+            .card-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                visibility: none;
+                transition: .5s ease;
+                background-color: $light-background-color;
+                transition: opacity 0.5s ease, visibility 0.5s ease;
+                border-radius: 15%;
+
+
+                p {
+                    color: white;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    text-align: center;
+                    width: 80%;
+                }
+              }
+
+            &:hover .card-overlay {
+                opacity: 1;
+                visibility: visible;
+                //transform: scale(1.05);
+            }
+        }
+    }
+}

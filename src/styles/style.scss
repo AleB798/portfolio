@@ -1,0 +1,36 @@
+//importation fonts
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+//déclaration de variables
+//colors
+$main-color: #f27457;
+$second-color: #253659;
+$light-background-color: #04BF9D;
+$white: #ffffff;
+$linear-gradient: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.2) 100%); 
+
+//Sizes
+$max-width-body: 100vw;
+
+//Breakpoints
+$breakpoint-tablet: 992px;
+$breakpoint-mobile: 768px;
+
+
+/* -----MIXINS-----*/
+
+//Carousel
+@mixin carousel-control {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    bottom: 5%;
+    background: none;
+    border: none;
+
+    img {
+      width: 60%;
+    }
+  }
+
+
