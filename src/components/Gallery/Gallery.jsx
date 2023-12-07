@@ -23,6 +23,7 @@ function Gallery() {
 
     return (
         <div id="portfolio" className='rental-gallery-container'>
+            {/* <h2>Portfolio</h2> */}
             <div className="rental-gallery">
                 {data.map((item) => (
                     <Card
@@ -35,19 +36,19 @@ function Gallery() {
                 ))}
             </div>
             {selectedCard && (
-    <div className="overlay-popup">
-        <div className="popup">
-            <h3>{selectedCardData.title}</h3>
-            <p>{selectedCardData.description}</p>
-            <Carousel 
-                pictures={selectedCardData.pictures} 
-                title={selectedCardData.title} 
-                index={selectedCardData.index} />
-            <Collapse data={data}  customTitle='Missions' content='missions'/>
-            <button onClick={closePopup} className="popup-close">X</button>
-        </div>
-    </div>
-)}
+                <div className="overlay-popup">
+                    <div className="popup">
+                        <h3>{selectedCardData.title}</h3>
+                        <p>{selectedCardData.description}</p>
+                        <Carousel 
+                            pictures={selectedCardData.pictures} 
+                            title={selectedCardData.title} 
+                            index={selectedCardData.index} />
+                        <Collapse data={[selectedCardData]} customTitle='Missions' content='tags'/>
+                        <button onClick={closePopup} className="popup-close">X</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }

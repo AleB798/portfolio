@@ -11,10 +11,10 @@ function Home() {
     <div id='homepage'>
       <About />
       <Header />
-        <div className="sections-width">
-          <Skills />        
-          <Gallery />
-        </div>
+      <div className="sections-width">
+        <Skills />        
+        <Gallery />
+      </div>
       <Footer />
     </div>
   );

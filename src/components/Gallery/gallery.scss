@@ -10,6 +10,11 @@
   justify-content: center;
   border-radius: 25px;
 
+  h2 {
+    font-family: caveat;
+    font-size: 5rem;
+  }
+
   .rental-gallery {
     width: 100%;
     display: grid;
@@ -22,6 +27,7 @@
       height: 340px;
       position: relative;
       margin: 0 auto;
+      cursor: pointer;
     
       img {
         border-radius: 10px;

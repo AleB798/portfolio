@@ -1,7 +1,7 @@
 import React from 'react';
 import { skillsDatas } from '../../datas/skills.js';
-import { FaLaptopCode, FaServer, FaPalette, FaHtml5, FaCss3, FaReact, FaSass, FaNode, FaFigma } from 'react-icons/fa6';
-import { SiAdobeindesign, SiAdobeillustrator, SiAdobephotoshop } from "react-icons/si";
+import { FaLaptopCode, FaServer, FaPalette, FaHtml5, FaCss3, FaReact, FaSass, FaNodeJs, FaFigma } from 'react-icons/fa6';
+import { SiAdobeindesign, SiAdobeillustrator, SiAdobephotoshop, SiMongodb } from "react-icons/si";
 import { DiJavascript } from "react-icons/di";
 import '../Skills/skills.scss';
 
@@ -35,7 +35,9 @@ function Skills() {
         case 'SASS':
           return <FaSass key={tag} />;
         case 'node' :
-          return <FaNode key={tag} />;
+          return <FaNodeJs key={tag} />;
+        case 'mongodb' :
+          return <SiMongodb key={tag} />;
         case 'indesign' :
           return <SiAdobeindesign key={tag} />;
         case 'photshop' :
@@ -52,17 +54,23 @@ function Skills() {
 
   return (
     <div id="skills">
+      <h2>Skills</h2>
       <div className="skills-cards">
         {skillsDatas.map((item) => {
           return (
-            <div className="card" key={item.id}>
-              <div className="custom-icons">{getIcon(item.name)}</div>
-              <div className="back-card">
-                <h3>{item.name}</h3>
-                <div className="custom-icons-2">{getIcon2(item.tags)}</div>
-              </div>
-              <div className="card-overlay">
-                  <p>{item.description}</p>
+            <div className="flip-card" key={item.id}>
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
+                  <div className="custom-icons">{getIcon(item.name)}</div>
+                  <h3>{item.name}</h3>
+                </div>
+                <div className="flip-card-back">
+                  <div className="text-container-card-back">
+                    <h3>{item.name}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                  <div className="custom-icons-2">{getIcon2(item.tags)}</div>
+                </div>
               </div>
             </div>
           );

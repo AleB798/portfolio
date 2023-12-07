@@ -2,31 +2,23 @@ import React from "react";
 import illustration from '../../assets/illustration-about-me.png';
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaCircleChevronDown } from "react-icons/fa6";
+import Scrolldown from "../Scrolldown/Scrolldown";
 import '../About/about.scss';
 
 function About() {
+
   const downloadCV = () => {
     const link = document.createElement('a');
     link.href = "https://drive.google.com/file/d/1FdSmI00ilmi6WCRYT4KgTjL7-UwyvqYn/view?usp=sharing";
     link.download = 'CV_AB_2022.pdf';
-    link.target = '_blank'; // Ouvre le lien dans une nouvelle fenêtre
+    link.target = '_blank';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   }
 
   const sendEmail = () => {
-    window.location.href = 'mailto:alexbaumann342@email.com'; // Remplacez par votre adresse e-mail
-  }
-
-  const scrollToNext = () => {
-    const nextSection = document.getElementById('home');
-
-    if (nextSection) {
-      const offsetTop = nextSection.offsetTop;
-      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-    }
+    window.location.href = 'mailto:alexbaumann342@email.com';
   }
 
   return (
@@ -51,7 +43,7 @@ function About() {
         </p>
       </div>
       <div className="scroll-down-icon">
-        <FaCircleChevronDown onClick={scrollToNext} />
+        <Scrolldown />
       </div>    
     </div>
   );

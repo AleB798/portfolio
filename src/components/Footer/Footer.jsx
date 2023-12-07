@@ -19,7 +19,7 @@ function Footer() {
           </div>
         ))}
       </div> */}
-      <p>© 2023 Alexandra Baumann. All rights deserved.</p>
+      <p>© 2023 Alexandra Baumann. All rights deserved. Images de Freepik</p>
     </footer>
   );
 }
