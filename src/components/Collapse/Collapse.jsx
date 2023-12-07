@@ -13,7 +13,7 @@ function CollapseItem({ title, customTitle, content }) {
   return (
     <div>
       <div className='collapse-container' onClick={toggleCollapse}>
-        <h3>{title || customTitle}</h3>
+        <h4>{title || customTitle}</h4>
         <img
           src={whiteArrowClose}
           alt={'toggle Arrow'}

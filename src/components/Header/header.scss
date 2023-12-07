@@ -33,7 +33,6 @@ header {
         font-size: 1.5rem;
         font-weight: 200;
         letter-spacing: 2px;
-        padding: 0 10px;
 
         &:hover {
           color: $light-background-color;
@@ -56,10 +55,11 @@ header {
     }
   
     .navbar {
-      gap : 8px;
+      gap : 10px;
         a {
           font-size: 0.65rem;
           text-transform: uppercase;
+          padding: 0;
         }
     }
   }  

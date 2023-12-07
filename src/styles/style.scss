@@ -8,10 +8,7 @@ $main-color: #f27457;
 $second-color: #253659;
 $light-background-color: #04BF9D;
 $white: #ffffff;
-$linear-gradient: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0.2) 100%); 
-
-//Sizes
-$max-width-body: 100vw;
+$radial-blue-background: radial-gradient(circle, rgba(22,32,53,1) 32%, rgba(37,54,89,1) 100%);
 
 //Breakpoints
 $breakpoint-tablet: 992px;
@@ -19,6 +16,17 @@ $breakpoint-mobile: 768px;
 
 
 /* -----MIXINS-----*/
+
+//Section
+@mixin section-basic-setup {
+    width: 100%;
+    padding: 150px 30px 80px;
+
+    h2 {
+      font-family: caveat;
+      font-size: 5rem;
+  }
+}
 
 //Carousel
 @mixin carousel-control {
