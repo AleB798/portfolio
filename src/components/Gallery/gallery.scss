@@ -89,7 +89,7 @@
         .popup-inner {
           display: flex;
           flex-direction: column;
-          gap: 50px;
+          gap: 30px;
           
           .infos {
             width: 100%;
@@ -112,9 +112,6 @@
               text-transform: uppercase;
             }
           }
-
-          // .carousel-popup {
-          // }
         }
 
         // Style pour le bouton de fermeture de la pop-up

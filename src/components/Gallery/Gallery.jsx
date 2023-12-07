@@ -3,6 +3,7 @@ import useFetch from "../../hooks/useFetch.jsx";
 import Card from '../Card/Card.jsx';
 import Carousel from '../Carousel/Carousel.jsx';
 import Collapse from '../Collapse/Collapse.jsx';
+import Tags from '../Tags/Tags.jsx';
 import '../Gallery/gallery.scss';
 
 function Gallery() {
@@ -44,6 +45,7 @@ function Gallery() {
                             <h3>{selectedCardData.title}</h3>
                             <p>{selectedCardData.description}</p>
                             <Collapse data={[selectedCardData]} customTitle='Missions' content='missions' />
+                            <Tags data={[selectedCardData]} />
                         </div>
                         <div ClassName="carousel-popup">
                             <Carousel 
