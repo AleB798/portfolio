@@ -27,8 +27,8 @@ function About() {
         <img src={illustration} alt="illustration dev web" onClick={sendEmail} />
         <div className="about-links">
           <button onClick={downloadCV} target="_blank">CV</button>
-          <a href="https://github.com/AleB798" target="_blank" rel="noopener noreferrer" className="custom-icons"><FaGithub /></a>
-          <a href="https://github.com/AleB798" target="_blank" rel="noopener noreferrer" className="custom-icons"><FaLinkedin /></a>
+          <a href="https://github.com/AleB798" target="_blank" rel="noopener noreferrer" className="custom-icons" aria-label="mon profil GitHub"><FaGithub /></a>
+          <a href="https://github.com/AleB798" target="_blank" rel="noopener noreferrer" className="custom-icons" aria-label="mon profil LinkedIN"><FaLinkedin /></a>
         </div>
       </div>
       <div className="about-right-part">
