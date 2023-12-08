@@ -24,7 +24,9 @@ function About() {
   return (
     <div id="about">
       <div className="about-left-part">
-        <img src={illustration} alt="illustration dev web" onClick={sendEmail} />
+        <div className="illustration">
+          <img src={illustration} alt="illustration dev web" onClick={sendEmail} />
+        </div>
         <div className="about-links">
           <button onClick={downloadCV} target="_blank">CV</button>
           <a href="https://github.com/AleB798" target="_blank" rel="noopener noreferrer" className="custom-icons" aria-label="mon profil GitHub"><FaGithub /></a>
@@ -44,7 +46,6 @@ function About() {
           </p>
         </div>
       </div>
-      
       <div className="scroll-down-icon">
         <Scrolldown />
       </div>    

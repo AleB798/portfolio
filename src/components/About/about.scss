@@ -5,13 +5,22 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 40px;
   padding: 20px 20px;
 
   .about-left-part {
     display: flex;
     flex-direction: column;
     width: 30%;
+
+    .illustration {
+      width: 100%;
+      
+      img {
+        width: 100%;
+        object-fit: contain;
+      }
+    }
 
     .about-links {
       display: flex;
@@ -125,29 +134,6 @@
 @media (max-width: $breakpoint-tablet) {
 
   #about {
-    gap: 20px;
-
-    .about-left-part {
-      width: 30%;
-    }
-
-    .about-right-part {
-      width: 70%;
-  
-      .about-texts {
-  
-        p {
-          font-size: 1.25rem;
-          width: 90%;
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 920px) {
-
-  #about {
     gap: 30px;
     flex-direction: column-reverse;
     justify-content: center;
@@ -156,7 +142,17 @@
       flex-direction: row;
       justify-content: center;
       width: 100%;
-      gap: 50px;
+      gap: 10px;
+
+      .illustration {
+        width: 70%;
+        
+        img {
+          width: 100%;
+          object-fit: contain;
+
+        }
+      }
 
       .about-links {
         flex-direction: column;
@@ -189,21 +185,27 @@
 
   #about {
     gap: 30px;
-    flex-direction: column-reverse;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+
 
     .about-left-part {
-      flex-direction: column-reverse;
-      align-content: center;
-      width: 100%;
-      gap: 30px;
+      flex-direction: column;
+      gap: 5px;
 
-      img {
-        width: 60%;
+      .illustration {
+        width: 100%;
+        
+        img {
+          object-fit: contain;
+          width: 100%;
+
+        }
       }
 
       .about-links {
         flex-direction: row;
-        margin-top: 25px;
   
         .custom-icons {
           font-size: 5rem;
@@ -213,77 +215,30 @@
 
     .about-right-part {
       width: 100%;
-  
+
       .about-texts {
+        margin-top: 25px;
 
         h2 {
           font-size: 2.25rem;
         }
   
         p {
-          font-size: 1.15rem;
-          width: 90%;
+          text-align: center;
+          font-size: 1.10rem;
+          width: 100%;
+          margin-bottom: 100px;
         }
       }
     }
-  
+
     .scroll-down-icon {
-      font-size: 6rem;
-      bottom: 20%; 
-      left: 70%;
-      }
+      font-size: 3rem;
+      color: white;
+      opacity: 0.5;
+      bottom: 5px;
+      left: 50%;
+
     }
   }
-
-  @media (max-width: 470px) {
-
-    #about {
-      gap: 30px;
-      flex-direction: column-reverse;
-  
-      .about-left-part {
-        flex-direction: column;
-        align-content: center;
-        width: 100%;
-        gap: 30px;
-  
-        img {
-          width: 100%;
-        }
-  
-        .about-links {
-          flex-direction: row;
-          margin-top: 25px;
-    
-          .custom-icons {
-            font-size: 5rem;
-          }
-        }
-      }
-  
-      .about-right-part {
-        width: 100%;
-    
-        .about-texts {
-  
-          h2 {
-            font-size: 1.5rem;
-            line-height: 2.5rem;
-            width: 98%;
-          }
-    
-          p {
-            text-align: center;
-            font-size: 0.75rem;
-            width: 98%;
-          }
-        }
-      }
-    
-      .scroll-down-icon {
-        font-size: 3rem;
-        bottom: 10px; 
-        left: 50%;
-        }
-      }
-    }
+}
