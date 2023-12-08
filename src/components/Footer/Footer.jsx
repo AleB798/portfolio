@@ -1,6 +1,7 @@
 import React from "react";
 //import { FaLocationDot, FaCommentDots, FaPhone } from "react-icons/fa6";
 import '../Footer/footer.scss';
+import ScrollToTop from "../ScrollToTop/ScrollToTop";
 
 // const iconsData = [
 //   { icon: <FaLocationDot />, text: "Basée en France" },
@@ -19,6 +20,9 @@ function Footer() {
           </div>
         ))}
       </div> */}
+      <div className="to-infos">
+        <ScrollToTop />
+      </div>
       <p>© 2023 Alexandra Baumann. All rights deserved. Images de Freepik</p>
     </footer>
   );

@@ -23,7 +23,7 @@ function About() {
 
   return (
     <div id="about">
-      <div>
+      <div className="about-left-part">
         <img src={illustration} alt="illustration dev web" onClick={sendEmail} />
         <div className="about-links">
           <button onClick={downloadCV} target="_blank">CV</button>
@@ -31,17 +31,20 @@ function About() {
           <a href="https://github.com/AleB798" target="_blank" rel="noopener noreferrer" className="custom-icons"><FaLinkedin /></a>
         </div>
       </div>
-      <div className="about-texts">
-        <h2>Alexandra</h2>
-        <h2> Développeuse web</h2>
-        <h2>front-end & 
-          <span className="job-2"> graphiste</span></h2>
-        <p>
-          Fraichement diplômée en tant que développeuse web et forte d'une 
-          expérience passée de 7 ans en tant que graphiste, 
-          je fusionne des compétences techniques et créatives. 
-        </p>
+      <div className="about-right-part">
+        <div className="about-texts">
+          <h2>Alexandra</h2>
+          <h2> Développeuse web</h2>
+          <h2>front-end & 
+            <span className="job-2"> graphiste</span></h2>
+          <p>
+            Fraichement diplômée en tant que développeuse web et forte d'une 
+            expérience passée de 7 ans en tant que graphiste, 
+            je fusionne des compétences techniques et créatives. 
+          </p>
+        </div>
       </div>
+      
       <div className="scroll-down-icon">
         <Scrolldown />
       </div>    

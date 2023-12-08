@@ -24,21 +24,36 @@
     //     }
     // }
 
+    .to-infos {
+
+        p {
+            font-size: 3rem;
+        }
+        
+        .scroll-up-icon {
+            font-size: 5rem;
+            color: white;
+            opacity: 0.5;
+            
+            &:hover {
+              color: $main-color;
+            }
+        }
+    } 
+
     p {
         color: $light-background-color;
-        font-size: 0.75rem;
+        font-size: 1rem;
         font-weight: 100;
-    }
-
-
+    } 
 }
 
 @media (max-width: $breakpoint-mobile) {
    #contact {
         p {
-            font-size: 0.45rem;
-            width: 134px;
+            font-size: 0.75rem;
             text-align: center;
+            width: 80%;
         }
     }
 }

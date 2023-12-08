@@ -3,7 +3,6 @@ import whiteArrowClose from '../../assets/arrow_close.svg';
 import '../Collapse/collapse.scss';
 
 function CollapseItem({ title, customTitle, content }) {
-  console.log(title, customTitle, content)
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleCollapse = () => {

@@ -25,7 +25,7 @@ export const skillsDatas = [
     },
     {
       id: "3",
-      name: "Graphisme",
+      name: "Design",
       description:"Créativité visuelle et expertise technique : conception d'éléments graphiques attrayants et fonctionnels.",
       picture: "",
       tags: [

@@ -47,7 +47,7 @@ function Gallery() {
                             <Collapse data={[selectedCardData]} customTitle='Missions' content='missions' />
                             <Tags data={[selectedCardData]} />
                         </div>
-                        <div ClassName="carousel-popup">
+                        <div className="carousel-popup">
                             <Carousel 
                                 pictures={selectedCardData.pictures} 
                                 title={selectedCardData.title} 

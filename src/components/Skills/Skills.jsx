@@ -14,7 +14,7 @@ function Skills() {
         return <FaLaptopCode />;
       case 'Back-end':
         return <FaServer />;
-      case 'Graphisme':
+      case 'Design':
         return <FaPalette />;
       default:
         return null;

@@ -11,7 +11,7 @@ $white: #ffffff;
 $radial-blue-background: radial-gradient(circle, rgba(22,32,53,1) 32%, rgba(37,54,89,1) 100%);
 
 //Breakpoints
-$breakpoint-tablet: 992px;
+$breakpoint-tablet: 1024px;
 $breakpoint-mobile: 768px;
 
 
@@ -20,7 +20,7 @@ $breakpoint-mobile: 768px;
 //Section
 @mixin section-basic-setup {
     width: 100%;
-    padding: 150px 30px 80px;
+    padding: 150px 30px 40px;
 
     h2 {
       font-family: caveat;

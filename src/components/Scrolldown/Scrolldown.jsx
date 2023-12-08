@@ -1,6 +1,8 @@
 import React from "react";
 import { FaCircleChevronDown } from "react-icons/fa6";
 
+
+//function to scroll to the next section
 function Scrolldown() {
   
   const scrollToNext = () => {
@@ -20,3 +22,4 @@ function Scrolldown() {
 };
 
 export default Scrolldown;
+
