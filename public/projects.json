@@ -2,11 +2,11 @@
 	{
 		"id": "c67ab8a7",
 		"title": "kasa",
-		"cover": "portfolio/images/kasa-1.png",
+		"cover": "/images/kasa-1.png",
 		"pictures": [
-			"portfolio/images/kasa-1.png",
-			"portfolio/images/kasa-2.png",
-			"portfolio/images/kasa-3.png"
+			"/images/kasa-1.png",
+			"/images/kasa-2.png",
+			"/images/kasa-3.png"
 		],
 		"description": "Création d'une application web de location immobilière avec React",
 		"missions": [
