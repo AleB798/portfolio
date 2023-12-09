@@ -2,33 +2,34 @@
 	{
 		"id": "c67ab8a7",
 		"title": "kasa",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+		"cover": "portfolio/images/kasa-1.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg"
+			"portfolio/images/kasa-1.png",
+			"portfolio/images/kasa-2.png",
+			"portfolio/images/kasa-3.png"
 		],
 		"description": "Création d'une application web de location immobilière avec React",
 		"missions": [
 			"Mettre en œuvre des animations CSS",
 			"Développer une interface web avec Sass",
 			"Configurer la navigation entre les pages de l'application avec React Router",
-			"FDévelopper des éléments de l'interface d'un site web grâce à des composants React",
+			"Développer des éléments de l'interface d'un site web grâce à des composants React",
 			"Initialiser une application avec Create React App"
 		],
 		"tags": [
 			"React",
 			"Sass"
-		]
+		],
+		"github": "https://github.com/AleB798/ocr_p6_kasa"
 	},
 	{
 		"id": "c6159jgh8a7",
 		"title": "Nina Carducci",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+		"cover": "portfolio/images/nina-carducci-1.jpg",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg"
+			"portfolio/images/nina-carducci-1.jpg",
+			"portfolio/images/nina-carducci-2.png",
+			"portfolio/images/nina-carducci-1.png"
 		],
 		"description": "Débugge et optimisation du site d'une photographe",
 		"missions": [
@@ -40,17 +41,18 @@
 			"SEO",
 			"Accessibilité",
 			"Optimisation"
-		]
+		],
+		"github": "https://github.com/AleB798/OCR_P5_Nina_Carducci"
 	},
 	{
 		"id": "c615gg56a7",
 		"title": "Booki",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+		"cover": "portfolio/images/booki-1.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg"
-		],
+			"portfolio/images/booki-1.png",
+			"portfolio/images/booki-2.png",
+			"portfolio/images/booki-3.png"
+				],
 		"description": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS",
 		"missions": [
 			"Implémenter une interface responsive avec HTML et CSS",
@@ -64,16 +66,17 @@
 			"Git",
 			"Github",
 			"Responsive"
-		]
+		],
+		"github": "https://github.com/AleB798/ocr_p2_integration_booki"
 	},
 	{
 		"id": "c615gul6a8",
 		"title": "Sophie Bluel",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+		"cover": "portfolio/images/sophie-bluel-1.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg"
+			"portfolio/images/sophie-bluel-1.png",
+			"portfolio/images/sophie-bluel-2.png",			
+			"portfolio/images/sophie-bluel-3.png"
 		],
 		"description": "Création d'une page web dynamique avec JavaScript",
 		"missions": [
@@ -83,16 +86,19 @@
 		],
 		"tags": [
 			"JavaScript"
-		]
+		],
+		"github": "https://github.com/AleB798/ocr_p3_sophieBluel_js"
+
 	},
 	{
 		"id": "cejf349knvc",
 		"title": "Mon vieux Grimoire",
-		"cover": "https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
+		"cover": "portfolio/images/mon_vieux_grimoire_1.png",
 		"pictures": [
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-1.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-2.jpg",
-			"https://s3-eu-west-1.amazonaws.com/course.oc-static.com/projects/front-end-kasa-project/accommodation-20-3.jpg"
+			"portfolio/images/mon_vieux_grimoire_1.png",
+			"portfolio/images/mon_vieux_grimoire_2.png",
+			"portfolio/images/mon_vieux_grimoire_3.png",
+			"portfolio/images/mon_vieux_grimoire_4.png"
 		],
 		"description": "Développement du back-end d'un site de notation de livres",
 		"missions": [
@@ -102,8 +108,9 @@
 		],
 		"tags": [
 			"Node.js",
-			"EXpress.js",
+			"Express.js",
 			"MongoDB"
-		]
+		],
+		"github": "https://github.com/AleB798/OCR_P7_mon_vieux_grimoire"
 	}
 ]

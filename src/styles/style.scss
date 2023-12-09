@@ -33,12 +33,14 @@ $breakpoint-mobile: 768px;
     position: absolute;
     z-index: 1;
     cursor: pointer;
-    bottom: 5%;
+    bottom: 50%;
     background: none;
     border: none;
 
     img {
       width: 60%;
+      vertical-align: center;
+
     }
   }
 

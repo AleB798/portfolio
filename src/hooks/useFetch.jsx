@@ -6,6 +6,7 @@ function useFetch(fileName) {
     useEffect(()=> {
         fetch(fileName)
             .then((response) => {
+                console.log(response)
                 if (!response.ok) {
                     console.log('erreur dans la récupération des données');
                 }

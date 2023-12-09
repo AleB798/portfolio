@@ -7,7 +7,7 @@ import Tags from '../Tags/Tags.jsx';
 import '../Gallery/gallery.scss';
 
 function Gallery() {
-    const { data } = useFetch('projects.json');
+    const { data } = useFetch('/portfolio/projects.json');
     const [selectedCard, setSelectedCard] = useState(null);
     const selectedCardData = data.find(item => item.id === selectedCard);
 
@@ -15,6 +15,13 @@ function Gallery() {
     const handleCardClick = (cardId) => {
         // Update l'ID de la carte sélectionnée
         setSelectedCard(cardId);
+    };
+
+    const goToGithub = () => {
+        // Fetch the github link from the selectedCardData and open it in a new tab
+        if (selectedCardData && selectedCardData.github) {
+            window.open(selectedCardData.github, '_blank');
+        }
     };
 
     const closePopup = () => {
@@ -52,6 +59,9 @@ function Gallery() {
                                 pictures={selectedCardData.pictures} 
                                 title={selectedCardData.title} 
                                 index={selectedCardData.index} />
+                        </div>
+                        <div className="github-link">
+                            <button onClick={goToGithub}>Lien Github</button>
                         </div>
                     </div>
                     <button onClick={closePopup} className="popup-close">X</button>

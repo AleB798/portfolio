@@ -113,6 +113,20 @@
               text-transform: uppercase;
             }
           }
+
+          .github-link {
+            text-align: center;
+
+            button {
+              font-weight: 700;
+              color: $second-color;
+              background-color: $white;
+              padding: 15px 8px;
+              border-radius: 10px;
+              border: none;
+              cursor: pointer;
+            }
+          }
         }
 
         // Style pour le bouton de fermeture de la pop-up
