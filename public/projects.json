@@ -25,11 +25,11 @@
 	{
 		"id": "c6159jgh8a7",
 		"title": "Nina Carducci",
-		"cover": "portfolio/images/nina-carducci-1.jpg",
+		"cover": "images/nina-carducci-1.jpg",
 		"pictures": [
-			"portfolio/images/nina-carducci-1.jpg",
-			"portfolio/images/nina-carducci-2.png",
-			"portfolio/images/nina-carducci-1.png"
+			"images/nina-carducci-1.jpg",
+			"images/nina-carducci-2.png",
+			"images/nina-carducci-1.png"
 		],
 		"description": "Débugge et optimisation du site d'une photographe",
 		"missions": [
@@ -47,11 +47,11 @@
 	{
 		"id": "c615gg56a7",
 		"title": "Booki",
-		"cover": "portfolio/images/booki-1.png",
+		"cover": "images/booki-1.png",
 		"pictures": [
-			"portfolio/images/booki-1.png",
-			"portfolio/images/booki-2.png",
-			"portfolio/images/booki-3.png"
+			"images/booki-1.png",
+			"images/booki-2.png",
+			"images/booki-3.png"
 				],
 		"description": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS",
 		"missions": [
@@ -72,11 +72,11 @@
 	{
 		"id": "c615gul6a8",
 		"title": "Sophie Bluel",
-		"cover": "portfolio/images/sophie-bluel-1.png",
+		"cover": "images/sophie-bluel-1.png",
 		"pictures": [
-			"portfolio/images/sophie-bluel-1.png",
-			"portfolio/images/sophie-bluel-2.png",			
-			"portfolio/images/sophie-bluel-3.png"
+			"images/sophie-bluel-1.png",
+			"images/sophie-bluel-2.png",			
+			"images/sophie-bluel-3.png"
 		],
 		"description": "Création d'une page web dynamique avec JavaScript",
 		"missions": [
@@ -93,12 +93,12 @@
 	{
 		"id": "cejf349knvc",
 		"title": "Mon vieux Grimoire",
-		"cover": "portfolio/images/mon_vieux_grimoire_1.png",
+		"cover": "images/mon_vieux_grimoire_1.png",
 		"pictures": [
-			"portfolio/images/mon_vieux_grimoire_1.png",
-			"portfolio/images/mon_vieux_grimoire_2.png",
-			"portfolio/images/mon_vieux_grimoire_3.png",
-			"portfolio/images/mon_vieux_grimoire_4.png"
+			"images/mon_vieux_grimoire_1.png",
+			"images/mon_vieux_grimoire_2.png",
+			"images/mon_vieux_grimoire_3.png",
+			"images/mon_vieux_grimoire_4.png"
 		],
 		"description": "Développement du back-end d'un site de notation de livres",
 		"missions": [
