@@ -47,7 +47,7 @@ header {
 //adaptation selon écrans
 @media (max-width: $breakpoint-mobile) {
   header {
-    padding: 5px 15px;
+    padding: 15px 15px;
 
     h1 {
       font-size: 2rem;
@@ -56,7 +56,7 @@ header {
     }
   
     .navbar {
-      gap : 10px;
+      gap : 15px;
         a {
           font-size: 1rem;
           text-transform: uppercase;

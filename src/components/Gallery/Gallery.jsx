@@ -18,7 +18,7 @@ function Gallery() {
     };
 
     const goToGithub = () => {
-        // Fetch the github link from the selectedCardData and open it in a new tab
+        // Récupère le lien Github
         if (selectedCardData && selectedCardData.github) {
             window.open(selectedCardData.github, '_blank');
         }
