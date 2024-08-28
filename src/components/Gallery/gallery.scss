@@ -1,0 +1,197 @@
+@import '../../styles/style.scss';
+
+.rental-gallery-container {
+
+  @include section-basic-setup;
+
+  .rental-gallery {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 30px;
+
+    .rental-card {
+      width: 100%;
+      min-width: 200px;
+      height: 340px;
+      position: relative;
+      margin: 0 auto;
+      cursor: pointer;
+      box-shadow: -5px 16px 32px -14px rgba(0,0,0,0.62);
+      -webkit-box-shadow: -5px 16px 32px -14px rgba(0,0,0,0.62);
+      -moz-box-shadow: -5px 16px 32px -14px rgba(0,0,0,0.62);
+    
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: 0;
+      }
+    
+      .overlay-card {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+
+        h3 {
+          color: $second-color;
+          text-transform: uppercase;
+          font-size: 5rem;
+          line-height: 6rem;
+          visibility: hidden;
+          transition: visibility 0s, transform 0.5s ease-in-out; // Add transition for smooth sliding effect
+          transform: translateX(-100%);
+          text-align: center;
+        }
+
+        &:hover {
+          background: $main-color;
+          opacity: 0.8;
+
+            h3 {
+              visibility: visible;
+              transform: translateX(0);
+            }
+        }  
+      }
+    }
+  }
+
+  // Style de l'overlay
+  .overlay-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000; 
+
+      // Style de la fenêtre pop-up
+      .popup {
+        background-color: $main-color;
+        padding: 50px;
+        border-radius: 8px;
+        width: 80%;
+        max-height: 85vh; 
+        overflow-y: auto;
+        position: relative;
+
+        .popup-inner {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          
+          .infos {
+            width: 100%;
+
+            h3 {
+              color: $second-color;
+              font-size: 3rem;
+              font-weight: 400;
+            }
+    
+            p {
+              margin-top: 20px;
+              font-size: 1.75rem;
+              color: $second-color;
+            }
+
+            h4 {
+              font-size: 1.75rem;
+              color: $white;
+              font-weight: 300;
+              text-transform: uppercase;
+            }
+          }
+
+          .github-link {
+            text-align: center;
+
+            button {
+              font-weight: 700;
+              color: $second-color;
+              background-color: $white;
+              padding: 15px 8px;
+              border-radius: 10px;
+              border: none;
+              cursor: pointer;
+            }
+          }
+        }
+
+        // Style pour le bouton de fermeture de la pop-up
+        .popup-close {
+          cursor: pointer;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 1.2rem;
+          font-weight: 900;
+          padding: 5px 10px;
+          color: $second-color;
+          background: none;
+          border: none;
+        }
+      }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+  .rental-gallery-container {
+    padding-top: 80px;
+    justify-content: center;
+
+    .rental-gallery {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-gap: 20px;
+
+      .rental-card {
+        width: 100%;
+        max-width: 100%;
+        min-width: 250px;
+        height: 255px; 
+        
+        .overlay-card {
+          h3 {
+            font-size: 2.5rem;
+            line-height: 4rem;
+          }
+        }
+      }
+    }
+
+    .overlay-popup {
+  
+        .popup {
+  
+          .popup-inner {
+            
+            .infos {
+  
+              h3 {
+                line-height: 3rem;
+              }
+      
+              p {
+                font-size: 1.25rem;
+              }
+
+              h4 {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }  
+  } 

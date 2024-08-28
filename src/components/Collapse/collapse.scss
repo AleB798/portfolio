@@ -1,0 +1,77 @@
+@import '../../styles/style.scss';
+
+.all-collapse {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+
+  .collapse-container {
+    background-color: $second-color;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    align-items: center;
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $white;
+    }
+
+    //animation sur Arrow au click  
+    .rotate-icon {
+      transition: transform 0.3s ease; 
+    }
+    
+    .rotate-icon.rotate-180 {
+      transform: rotate(-180deg);
+    }
+  }
+
+  .content-container {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background-color: $white;
+    border-radius: 0 0 10px 10px;
+
+    p, li {
+      color: $second-color;
+      font-size: 1.125rem;
+      font-weight: 400;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+  .all-collapse {
+    gap: 20px;
+
+    .collapse-container {
+      padding: 10px;
+
+        h4 {
+          font-size: 0.825rem;
+        }
+
+        .rotate-icon {
+          width: 16px; 
+        }
+    }
+
+    .content-container {
+      p, li {
+        font-size: 0.75rem;
+        line-height: 17px;
+      }
+    }
+  }
+}
+  
+
+

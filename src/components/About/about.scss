@@ -1,0 +1,245 @@
+@import '../../styles/style.scss';
+
+#about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 20px;
+
+  .about-left-part {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    .illustration {
+      width: 100%;
+      
+      img {
+        width: 100%;
+        object-fit: contain;
+        cursor: pointer;
+      }
+    }
+
+    .about-links {
+      display: flex;
+      justify-content: space-around;
+  
+      button {
+        background-color: $second-color;
+        border: solid 2px $light-background-color;
+        color: $light-background-color;
+        font-size: 2em;
+        padding: 10px 15px;
+    
+        &:hover {
+          background-color: $light-background-color;
+          color: $second-color;
+          border-radius: 50px;
+        }
+      }
+
+      .custom-icons {
+        display: flex;
+        align-items: center;
+        color: $light-background-color;
+        font-size: 4em;
+      }
+    }
+  }
+ 
+  .about-right-part {
+    width: 70%;
+
+    .about-texts {
+  
+      h2 {
+        line-height: 1.25em;
+        font-weight: 600;
+        width: 90%;
+  
+          &:first-child {
+            color: white;
+            text-transform: uppercase;
+            animation: typing 2s steps(10), blink .5s step-end;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid;
+          }
+  
+          &:nth-child(2) {
+            animation: typing 4s steps(30), blink .5s step-end;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid; 
+          }
+  
+          &:nth-child(3) {
+            animation: typing 5s steps(30), blink .5s step-end;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid; 
+          }
+  
+          .job-2 {
+            font-weight: 100;
+          }
+  
+          @keyframes typing {
+            from { width: 0 }
+          }
+              
+          @keyframes blink {
+            50% {
+              border-color: transparent
+            }
+          }
+      }
+  
+      p {
+        font-size: 1.50rem;
+        font-weight: 200;
+        margin-top: 35px;
+        width: 80%;
+      }
+    }
+  }
+
+  .scroll-down-icon {
+    font-size: 3rem;
+    color: white;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scrollUpDown 2s infinite;
+
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  @keyframes scrollUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+}
+
+@media (max-width: $breakpoint-tablet) {
+
+  #about {
+    gap: 30px;
+    flex-direction: column-reverse;
+    justify-content: center;
+
+    .about-left-part {
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      gap: 10px;
+
+      .illustration {
+        width: 70%;
+        
+        img {
+          width: 100%;
+          object-fit: contain;
+
+        }
+      }
+
+      .about-links {
+        flex-direction: column;
+  
+        .custom-icons {
+          font-size: 8rem;
+        }
+      }
+    }
+
+    .about-right-part {
+      width: 100%;
+  
+      .about-texts {
+
+        h2 {
+          width: 100%;
+        }
+  
+        p {
+          font-size: 1.25rem;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+  #about {
+    gap: 30px;
+    height: auto;
+    flex-direction: column;
+    position: relative;
+
+
+    .about-left-part {
+      flex-direction: column;
+      gap: 5px;
+
+      .illustration {
+        width: 100%;
+        
+        img {
+          object-fit: contain;
+          width: 100%;
+
+        }
+      }
+
+      .about-links {
+        flex-direction: row;
+  
+        .custom-icons {
+          font-size: 5rem;
+        }
+      }
+    }
+
+    .about-right-part {
+      width: 100%;
+
+      .about-texts {
+        margin-top: 25px;
+
+        h2 {
+          font-size: 1.85rem;
+        }
+  
+        p {
+          text-align: center;
+          font-size: 1.10rem;
+          width: 100%;
+          margin-bottom: 250px;
+        }
+      }
+    }
+
+    .scroll-down-icon {
+      font-size: 3rem;
+      color: white;
+      opacity: 0.5;
+      bottom: 30px;
+      left: 50%;
+
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../styles/style.scss';
+
+.tags-container {
+  width: 100%;
+  margin-top: 15px;
+
+  .tags-list {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    .tags-item {
+      background-color: $white; 
+      padding: 5px 10px; 
+      border-radius: 10px; 
+      color: $second-color; 
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+  }   
+}
+
+@media (max-width: $breakpoint-mobile) {
+
+  .tags-container {
+  
+    .tags-list {
+      flex-wrap: wrap;
+  
+      .tags-item {
+         
+        width: 84px;
+        font-size: 0.625rem;
+      }
+    }   
+  }
+}
+
+
+
+  
+  

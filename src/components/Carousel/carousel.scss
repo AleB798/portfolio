@@ -1,0 +1,68 @@
+@import '../../styles/style.scss';
+
+.carousel {
+    width: 100%;
+    position: relative;
+
+    .prev {
+      @include carousel-control;
+      left: 10px;
+    }
+  
+    .next {
+      @include carousel-control;
+      right: 10px;
+    }
+
+    p {
+      position: absolute;
+      bottom: 10px; 
+      left: 50%; 
+      z-index: 1;
+      padding: 25px 0; 
+      font-size: 1.125rem;
+      font-weight: 500;
+      color: $white;
+    }
+  
+    .carousel-img {
+      width: 100%; 
+      height: 400px;
+      object-fit: cover;
+      border-radius: 25px;
+    }
+  }
+
+@media (max-width: $breakpoint-mobile) {
+
+  .carousel {
+    width: 100%;
+
+    .prev {
+      left: 5px;
+      top: 50%;
+
+      img {
+        width: 24px;
+      }
+    }
+  
+    .next {
+      right: 5px;
+      top: 50%;
+
+      img {
+        width: 24px;
+      }
+    }
+
+    p {
+      visibility: hidden;
+    }
+
+    .carousel-img {
+      height: 255px;
+      border-radius: 10px;
+    }
+  }
+}

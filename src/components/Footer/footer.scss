@@ -1,0 +1,60 @@
+@import '../../styles/style.scss';
+
+#contact {
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    // .contact-infos {
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: space-around;
+
+
+    //     .custom-icons {
+    //         font-size: 2rem;
+    //     }
+
+    //     p {
+    //         color: $second-color;
+    //         font-size: 1.05rem;
+    //         font-weight: 300;
+    //     }
+    // }
+
+    .to-infos {
+
+        p {
+            font-size: 3rem;
+        }
+        
+        .scroll-up-icon {
+            font-size: 2rem;
+            color: white;
+            opacity: 0.5;
+            
+            &:hover {
+              color: $main-color;
+            }
+        }
+    } 
+
+    p {
+        color: $light-background-color;
+        font-size: 0.75rem;
+        font-weight: 100;
+    } 
+}
+
+@media (max-width: $breakpoint-mobile) {
+   #contact {
+        p {
+            font-size: 0.75rem;
+            text-align: center;
+            width: 80%;
+        }
+    }
+}
+

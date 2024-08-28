@@ -1,0 +1,116 @@
+[
+	{
+		"id": "c67ab8a7",
+		"title": "kasa",
+		"cover": "images/kasa-1.png",
+		"pictures": [
+			"images/kasa-1.png",
+			"images/kasa-2.png",
+			"images/kasa-3.png"
+		],
+		"description": "Création d'une application web de location immobilière avec React",
+		"missions": [
+			"Mettre en œuvre des animations CSS",
+			"Développer une interface web avec Sass",
+			"Configurer la navigation entre les pages de l'application avec React Router",
+			"Développer des éléments de l'interface d'un site web grâce à des composants React",
+			"Initialiser une application avec Create React App"
+		],
+		"tags": [
+			"React",
+			"Sass"
+		],
+		"github": "https://github.com/AleB798/ocr_p6_kasa"
+	},
+	{
+		"id": "c6159jgh8a7",
+		"title": "Nina Carducci",
+		"cover": "images/nina-carducci-1.jpg",
+		"pictures": [
+			"images/nina-carducci-1.jpg",
+			"images/nina-carducci-2.png",
+			"images/nina-carducci-1.png"
+		],
+		"description": "Débugge et optimisation du site d'une photographe",
+		"missions": [
+			"Optimiser les performances d’un site web",
+			"Débugger un site web grâce aux Chrome DevTools",
+			"Rédiger un cahier de recette pour tester un site"
+		],
+		"tags": [
+			"SEO",
+			"Accessibilité",
+			"Optimisation"
+		],
+		"github": "https://github.com/AleB798/OCR_P5_Nina_Carducci"
+	},
+	{
+		"id": "c615gg56a7",
+		"title": "Booki",
+		"cover": "images/booki-1.png",
+		"pictures": [
+			"images/booki-1.png",
+			"images/booki-2.png",
+			"images/booki-3.png"
+				],
+		"description": "Création de la page d'accueil d'une agence de voyage avec HTML & CSS",
+		"missions": [
+			"Implémenter une interface responsive avec HTML et CSS",
+			"Intégrer du contenu conformément à une maquette avec HTML et CSS",
+			"Versionner son projet avec Git et Github",
+			"Installer un environnement de développement front-end"
+		],
+		"tags": [
+			"HTML",
+			"CSS",
+			"Git",
+			"Github",
+			"Responsive"
+		],
+		"github": "https://github.com/AleB798/ocr_p2_integration_booki"
+	},
+	{
+		"id": "c615gul6a8",
+		"title": "Sophie Bluel",
+		"cover": "images/sophie-bluel-1.png",
+		"pictures": [
+			"images/sophie-bluel-1.png",
+			"images/sophie-bluel-2.png",			
+			"images/sophie-bluel-3.png"
+		],
+		"description": "Création d'une page web dynamique avec JavaScript",
+		"missions": [
+			"Gérer les événements utilisateurs avec JavaScript",
+			"Manipuler les éléments du DOM avec JavaScript",
+			"Récupérer les données utilisateurs dans le JavaScript via des formulaires"
+		],
+		"tags": [
+			"JavaScript"
+		],
+		"github": "https://github.com/AleB798/ocr_p3_sophieBluel_js"
+
+	},
+	{
+		"id": "cejf349knvc",
+		"title": "Mon vieux Grimoire",
+		"cover": "images/mon_vieux_grimoire_1.png",
+		"pictures": [
+			"images/mon_vieux_grimoire_1.png",
+			"images/mon_vieux_grimoire_2.png",
+			"images/mon_vieux_grimoire_3.png",
+			"images/mon_vieux_grimoire_4.png"
+		],
+		"description": "Développement du back-end d'un site de notation de livres",
+		"missions": [
+			"Implémenter un modèle logique de données conformément à la réglementation",
+			"Mettre en œuvre des opérations CRUD de manière sécurisée",
+			"Stocker des données de manière sécurisée"
+		],
+		"tags": [
+			"Node.js",
+			"Express.js",
+			"MongoDB"
+		],
+		"github": "https://github.com/AleB798/OCR_P7_mon_vieux_grimoire"
+	}
+]
